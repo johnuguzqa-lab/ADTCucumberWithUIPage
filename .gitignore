@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Test output
+reports/
+.cucumber/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs / misc
+*.log
+tree.txt

@@ -1,0 +1,34 @@
+{
+  "name": "vegetable-counter-bdd",
+  "version": "1.0.0",
+  "description": "Cucumber BDD + Playwright automated test suite for the Vegetable Counter web application",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "app": "node app/server.js",
+    "test": "node scripts/run-tests.js",
+    "test:headed": "node scripts/run-tests.js --headed",
+    "test:record": "node scripts/run-tests.js --record",
+    "test:record:headed": "node scripts/run-tests.js --record --headed",
+    "test:edge": "node scripts/run-tests.js --browser=edge",
+    "test:edge:headed": "node scripts/run-tests.js --browser=edge --headed",
+    "test:smoke": "node scripts/run-tests.js --tags \"@smoke\"",
+    "test:smoke:headed": "node scripts/run-tests.js --tags \"@smoke\" --headed",
+    "test:tags": "cucumber-js --tags",
+    "test:dry": "cucumber-js --dry-run",
+    "postinstall": "playwright install chromium"
+  },
+  "keywords": [
+    "cucumber",
+    "bdd",
+    "playwright",
+    "testing",
+    "e2e"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.49.1",
+    "http-server": "^14.1.1"
+  }
+}
